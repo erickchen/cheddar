@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cheddar</title>
+    <link rel="icon" href="static/image/cheese-512.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class = "container">  
+        <div class="row">
+            <div class="col s1">
+                <br>
+                <a class="btn-floating btn waves-effect waves-light blue" href={{ url_for('home') }}>
+                    <i class="material-icons">home</i></a>
+            </div>
+            <div class="col s11"><h4 class="left-align">PDF to Word</h4></div>
+        </div>
+        <hr>
+        <div class="row"></div> 
+        <div class = "row">
+           <form class = "col s6">
+              <div class = "row">
+                <label>Choose File</label>
+                <div class = "file-field input-field">
+                    <div class = "btn-small">
+                       <span>Browse File</span>
+                       <input type = "file" />
+                    </div>
+                    <div class = "file-path-wrapper">
+                       <input class = "file-path validate" type = "text"
+                          placeholder = "Upload file" />
+                    </div>
+                    <span class="helper-text">Extension Allowed: doc. docx.</span>
+                </div>
+              </div>
+              <div class="row"></div>
+              <div class="row">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+              </div>
+              
+              <!-- <div class = "row">
+                 <label>Materialize Multi File Input</label>
+                 <div class = "file-field input-field">
+                    <div class = "btn">
+                       <span>Browse</span>
+                       <input type = "file" multiple />
+                    </div>
+                    
+                    <div class = "file-path-wrapper">
+                       <input class = "file-path validate" type = "text"
+                          placeholder = "Upload multiple files" />
+                    </div>
+                 </div>    
+              </div> -->
+           </form>       
+        </div>
+     </body>   
+</html>
